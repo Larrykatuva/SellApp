@@ -1,0 +1,225 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    
+    {% include 'partials/_navbar.html' %}
+    <!--Home header -->
+    <div id="header">
+        <div id="header-row">
+            <div id="header-col-3">
+                <img src="{% static 'img/header1.png' %}" alt="" class="header-img">
+            </div>
+            <div id="header-col-6" class="text-center">
+                <p class="header-title">
+                    Find anything <span class="header-country">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        in Kenya</span>
+                </p>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="prodcut-search" placeholder="Search product">
+                </div>
+            </div>
+            <div id="header-col-3">
+                <img src="{% static 'img/header2.png' %}" alt="" class="header-img">
+            </div>
+        </div>
+    </div> 
+    
+    <!--Home categories-->
+    <div class="categories">
+        <div class="category-row">
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/car.png' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Vehicles</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/house.png' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Property</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/mac.jpg' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Computing</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/coach.png' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Furniture and Appleances</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/fashion.jpg' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Fashion</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/beauty.png' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Beauty</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="category-row">
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/s10.png' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Phones, Tablets and Accessories</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/compresor.png' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Repair and Construction</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/brief.png' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Jobs and Vacancies</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/groceries.png' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Food and Groceries</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/service.png' %}" alt="" class="category-img">
+                        <hp class="category-heading">Manual and technical services</p>
+                    </div>
+                </a>
+            </div>
+            <div class="category-col-6">
+                <a href="" class="card">
+                    <div class="card-body">
+                        <img src="{% static 'img/car.png' %}" alt="" class="category-img">
+                        <h3 class="category-heading">Vehicles</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Products category -->
+    <div class="products">
+        <h3 class="product-heaading">Trending Ands</h3>
+        <div class="product-row">
+            <div class="product-col-3">
+                <div id="card">
+                    <img src="{% static 'img/a10.jpg' %}" alt="" class="product-img">
+                    <p class="pull-right product-love"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                    <p class="product-name">Samsung Galaxy A10 32Gb</p>
+                    <p class="product-price">Ksh 80000</p>
+                </div>
+            </div>
+            <div class="product-col-3">
+                <div id="card">
+                    <img src="{% static 'img/a10.jpg' %}" alt="" class="product-img">
+                    <p class="pull-right product-love"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                    <p class="product-name">Samsung Galaxy A10 32Gb</p>
+                    <p class="product-price">Ksh 80000</p>
+                </div>
+            </div>
+            <div class="product-col-3">
+                <div id="card">
+                    <img src="{% static 'img/a10.jpg' %}" alt="" class="product-img">
+                    <p class="pull-right product-love"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                    <p class="product-name">Samsung Galaxy A10 32Gb</p>
+                    <p class="product-price">Ksh 80000</p>
+                </div>
+            </div>
+            <div class="product-col-3">
+                <div id="card">
+                    <img src="{% static 'img/a10.jpg' %}" alt="" class="product-img">
+                    <p class="pull-right product-love"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                    <p class="product-name">Samsung Galaxy A10 32Gb</p>
+                    <p class="product-price">Ksh 80000</p>
+                </div>
+            </div>
+            <div class="product-col-3">
+                <div id="card">
+                    <img src="{% static 'img/a10.jpg' %}" alt="" class="product-img">
+                    <p class="pull-right product-love"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                    <p class="product-name">Samsung Galaxy A10 32Gb</p>
+                    <p class="product-price">Ksh 80000</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product-col-3">
+                <div id="card">
+                    <img src="{% static 'img/a10.jpg' %}" alt="" class="product-img">
+                    <p class="pull-right product-love"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                    <p class="product-name">Samsung Galaxy A10 32Gb</p>
+                    <p class="product-price">Ksh 80000</p>
+                </div>
+            </div>
+            <div class="product-col-3">
+                <div id="card">
+                    <img src="{% static 'img/a10.jpg' %}" alt="" class="product-img">
+                    <p class="pull-right product-love"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                    <p class="product-name">Samsung Galaxy A10 32Gb</p>
+                    <p class="product-price">Ksh 80000</p>
+                </div>
+            </div>
+            <div class="product-col-3">
+                <div id="card">
+                    <img src="{% static 'img/a10.jpg' %}" alt="" class="product-img">
+                    <p class="pull-right product-love"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                    <p class="product-name">Samsung Galaxy A10 32Gb</p>
+                    <p class="product-price">Ksh 80000</p>
+                </div>
+            </div>
+            <div class="product-col-3">
+                <div id="card">
+                    <img src="{% static 'img/a10.jpg' %}" alt="" class="product-img">
+                    <p class="pull-right product-love"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                    <p class="product-name">Samsung Galaxy A10 32Gb</p>
+                    <p class="product-price">Ksh 80000</p>
+                </div>
+            </div>
+            <div class="product-col-3">
+                <div id="card">
+                    <img src="{% static 'img/a10.jpg' %}" alt="" class="product-img">
+                    <p class="pull-right product-love"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                    <p class="product-name">Samsung Galaxy A10 32Gb</p>
+                    <p class="product-price">Ksh 80000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/login.js' %}"></script>
+
+{% endblock %}

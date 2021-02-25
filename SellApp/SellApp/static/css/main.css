@@ -1,0 +1,14 @@
+:root {
+    --brand: #7FFF00;
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+
+.showPasswordToggle{
+    padding-top: 5px;
+    cursor: pointer;
+    transition: all;
+}
+.showPasswordToggle:hover{
+    transform: scale(1.2);
+}
