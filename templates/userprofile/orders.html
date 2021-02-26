@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    
+    {% include 'partials/_navbar.html' %}
+
+    <div id="profile-container" class="container">
+        <div id="row">
+            <div class="profile-col-3">
+                {% include 'partials/menu.html' %}
+            </div>
+            <div class="profile-col-9">
+                <div id="card">
+                    <div id="profile-info" class="tile">
+                        <h3 class="tile-title">Purchase Deals</h3>
+                        <hr>
+                        <div class="tile-body">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="{% static 'img/mac.jpg' %}" alt="" class="card-img">
+                                        </div>
+                                        <div class="col-9">
+                                            <h6 class="card-title">Camon 12 Air, 6.55", 32GB + 3GB (Dual SIM) - Blue</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Order 378851362</h5>
+                                            <button class="btn border border-success btn-sm text-success">
+                                                <i class="fa fa-check mr-1" aria-hidden="true"></i>Closed
+                                            </button>
+                                            <h6 class="card-title">On 15-03-2020</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="{% static 'img/mac.jpg' %}" alt="" class="card-img">
+                                        </div>
+                                        <div class="col-9">
+                                            <h6 class="card-title">Camon 12 Air, 6.55", 32GB + 3GB (Dual SIM) - Blue</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Order 378851362</h5>
+                                            <button class="btn border border-danger btn-sm text-danger">
+                                                <i class="fa fa-clock-o mr-1" aria-hidden="true"></i>Pending
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/login.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    
+    {% include 'partials/_navbar.html' %}
+
+    <div id="profile-container" class="container">
+        <div id="row">
+            <div class="profile-col-3">
+                {% include 'partials/menu.html' %}
+            </div>
+            <div class="profile-col-9">
+                <div id="card">
+                    <div id="profile-info" class="tile">
+                        <h3 class="tile-title">Saved items</h3>
+                        <hr>
+                        <div class="tile-body">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="{% static 'img/mac.jpg' %}" alt="" class="card-img">
+                                        </div>
+                                        <div class="col-6">
+                                            <h6 class="card-title">Camon 12 Air, 6.55", 32GB + 3GB (Dual SIM) - Blue</h5>
+                                            <h6 class="card-subtitle mb-2 text-success">Available<i class="fa fa-check ml-1" aria-hidden="true"></i></h5>
+                                            <h6 class="card-title">KSh 60,399</h5>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#" class="btn border border-success btn-sm text-success">Buy Now</a>
+                                            <a href="#" class="btn border border-danger btn-sm text-danger">
+                                                <i class="fa fa-trash-o mr-1" aria-hidden="true"></i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="{% static 'img/mac.jpg' %}" alt="" class="card-img">
+                                        </div>
+                                        <div class="col-6">
+                                            <h6 class="card-title">Camon 12 Air, 6.55", 32GB + 3GB (Dual SIM) - Blue</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Out of Stock<i class="fa fa-exclamation-circle ml-1" aria-hidden="true"></i></h5>
+                                            <h6 class="card-title">KSh 60,399</h5>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#" class="btn border border-success btn-sm text-muted">Buy Now</a>
+                                            <a href="#" class="btn border border-danger btn-sm text-danger">
+                                                <i class="fa fa-trash-o mr-1" aria-hidden="true"></i>
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/login.js' %}"></script>
+
+{% endblock %}

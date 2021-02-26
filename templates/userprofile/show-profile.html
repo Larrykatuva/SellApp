@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    
+    {% include 'partials/_navbar.html' %}
+
+    <div id="profile-container" class="container">
+        <div id="row">
+            <div class="profile-col-3">
+                {% include 'partials/menu.html' %}
+            </div>
+            <div class="profile-col-9">
+
+                <div id="card">
+                    <div id="profile-info">
+                        {% include 'partials/_messages.html' %}
+                        <img style="width: 100px; border-radius: 50px;" src="{% static 'img/profile.jpg' %}" alt="" id="user-profile-img">
+                        <h6 class="card-title mt-1">Lawrence Katuva</h6>
+                        <p class="card-text">larry.katuva@gmail.com</p>
+                        <p class="card-text">0720460519</p>
+                        <a href="#" class="btn border border-success text-success btn-sm">Edit profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/login.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+#profile-container{
+    margin-top: 10px;
+}
+
+#profile-info img{
+    width: 100px;
+}
+
+#row{
+    display: flex;
+}
+
+.profile-col-3{
+    flex-basis: 25%;
+}
+
+.profile-col-9{
+    margin-left: 10px;
+    flex-basis: 73%;
+}
+
+#profile-menu li a{
+    color: #696969;
+}
+
+#profile-info{
+    padding:20px;
+}
